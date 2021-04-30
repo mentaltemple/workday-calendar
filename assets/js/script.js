@@ -36,11 +36,17 @@ $(document).ready(function () {
     //loop thru the time block hours
     $(".time-block").each(function () {
       var blockHour = parseInt($(this).attr("id").split("-")[1]);
-    });
 
-    //check the current hour against each block hour
-    //if else
-    // if(currentHour)
+      //check the current hour against each block hour
+      //if else
+
+      if (blockHour < currentHour) {
+        $(this).addClass("past");
+      } else if (blockHour === currentHour) $(this).addClass("present");
+      else {
+        $(this).addClass("future");
+      }
+    });
   }
   checkTime();
 
