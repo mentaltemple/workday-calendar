@@ -27,6 +27,23 @@ $(document).ready(function () {
 
   //FUNCTIONS
 
+  //function will be responsible for checking time and determining which class to add (past, present, future)
+  function checkTime() {
+    //grab the current hour using moment js
+    var currentHour = moment().hours();
+
+    //need to grab the hour from the time block
+    //loop thru the time block hours
+    $(".time-block").each(function () {
+      var blockHour = parseInt($(this).attr("id").split("-")[1]);
+    });
+
+    //check the current hour against each block hour
+    //if else
+    // if(currentHour)
+  }
+  checkTime();
+
   //EVENT HANDLERS
   $(".saveBtn").on("click", function () {
     //need to capture input info and store in local storage
