@@ -28,4 +28,12 @@ $(document).ready(function () {
   //FUNCTIONS
 
   //EVENT HANDLERS
+  $(".saveBtn").on("click", function () {
+    //need to capture input info and store in local storage
+    //need to capture the value of the input and also need to know which time block it's attached to
+    var value = $(this).siblings(".description").val();
+    var time = $(this).parent().attr("id");
+
+    localStorage.setItem(time, value);
+  });
 });
