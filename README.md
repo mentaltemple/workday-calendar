@@ -1,95 +1,65 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# <workday-calendar>
 
-## Your Task
+## Description
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+-I was motivated to build an intuitive web app workday calendar utilizing html, javaScript, bootstrap, jQuery and moment js.
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+-I built this project to gain a deeper understanding of these libraries and to deepend my understanding of javaScript.
 
-## User Story
+-This calendar allows the user to view the current workday, easily asses what time it is according to the calendar, view tasks that were previously saved, and save new tasks in different hour blocks.
 
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+-I learned a lot about jQuery, especially callback functions. I learned how to style elements with bootstrap. I learned how to refer to, dipslay and use moment js on a page. I learned how to decide whether it's better to create elements statically or dynamically. I learned how to dynamically alter elements. I learned how to save into and retrieve from local storage.
 
-## Acceptance Criteria
+## Installation
 
-```md
-GIVEN I am using a daily planner to create a schedule
+Click on the link to visit the web app: https://mentaltemple.github.io/workday-calendar/
 
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
+## Usage
 
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
+The calendar will display the current day, along with time blocks for the current work day. The current hour is highlighted in red, the future hours are highlighted in green, while the past hours are grayed out. User can click on a time block, enter text, click save and the data will be retireved and displayed upon page reload until local storage is cleard.
 
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
+`md ![demo gif of working calendar](./assets/images/workday-calendar-demo.gif) `
 
-WHEN I click into a timeblock
-THEN I can enter an event
+## Credits
 
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
+Special thanks to:
 
-WHEN I refresh the page
-THEN the saved events persist
-```
+-Ben Machock (Instructor)
 
-The following animation demonstrates the application functionality:
+-Ron Eihul (Substitute Instructor)
 
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
+-Leo Silva + Zac Stowell (TAs)
 
-## Grading Requirements
+-https://momentjs.com/
 
-This homework is graded based on the following criteria:
+-https://getbootstrap.com/
 
-### Technical Acceptance Criteria: 40%
+-https://jquery.com/
 
-- Satisfies all of the above acceptance criteria plus the following:
+-https://fontawesome.com/
 
-  - Uses a date utility library to work with date and time
+-https://jqueryui.com/
 
-### Deployment: 32%
+## License
 
-- Application deployed at live URL
+## MIT License
 
-- Application loads with no errors
+Copyright (c) [2021] [Joshua Randy Abeyta]
 
-- Application GitHub URL submitted
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-- GitHub repo contains application code
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-### Application Quality: 15%
-
-- Application user experience is intuitive and easy to navigate
-
-- Application user interface style is clean and polished
-
-- Application resembles the mock-up functionality provided in the homework instructions
-
-### Repository Quality: 13%
-
-- Repository has a unique name
-
-- Repository follows best practices for file structure and naming conventions
-
-- Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-- Repository contains multiple descriptive commit messages
-
-- Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-- The URL of the deployed application
-
-- The URL of the GitHub repository, with a unique name and a README describing the project
-
----
-
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

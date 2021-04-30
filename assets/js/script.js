@@ -42,9 +42,11 @@ $(document).ready(function () {
 
       if (blockHour < currentHour) {
         $(this).addClass("past");
-      } else if (blockHour === currentHour) $(this).addClass("present");
-      else {
+      } else if (blockHour === currentHour) {
+        $(this).addClass("present");
+      } else {
         $(this).addClass("future");
+        console.log(this);
       }
     });
   }
